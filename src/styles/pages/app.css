@@ -77,3 +77,32 @@ align-items: end;
 
 }
 
+.inner_linesright,
+.inner_linesleft {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.img_hero {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.anim_p {
+  backface-visibility: hidden;
+}
+
+h1 {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.char-wrapper {
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform: translateZ(0);
+}
+

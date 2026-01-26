@@ -1,8 +1,8 @@
 import { gsap, customEases } from "../../lib/index.js";
-import ENTER from "../../animations/Enter.js";
+
 
 export async function defaultTransition(currentContainer, nextContainer) {
-  const content = nextContainer.querySelector("#page_content");
+ 
 
   gsap.set(nextContainer, {
     clipPath: "inset(100% 0% 0% 0%)",
@@ -16,13 +16,7 @@ export async function defaultTransition(currentContainer, nextContainer) {
     willChange: "transform, clip-path",
   });
 
-  // gsap.set(content, {
-  //   y: "40vh",
-  //   force3D: true,
-  //   willChange: "transform",
-  // });
 
-  const enterData = ENTER(nextContainer, 0.4);
 
   const tl = gsap.timeline({ defaults: { force3D: true } });
 
@@ -48,17 +42,7 @@ export async function defaultTransition(currentContainer, nextContainer) {
       0,
     );
 
-  // if (enterData?.tweens) {
-  //   enterData.tweens.forEach((tween) => {
-  //     tl.to(tween.target, tween.vars, tween.position);
-  //   });
-  // }
 
-  // if (enterData?.splitInstance) {
-  //   tl.eventCallback("onComplete", () => {
-  //     nextContainer._splitInstance = enterData.splitInstance;
-  //   });
-  // }
 
   return tl;
 }

@@ -94,5 +94,4 @@ export async function executeTransition({
 
   window.scrollTo(0, 0);
 
-  console.log("🎉 Transition flow complete");
 }
