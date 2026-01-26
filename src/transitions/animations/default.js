@@ -31,7 +31,7 @@ export async function defaultTransition(currentContainer, nextContainer) {
     {
       y: "-30vh",
       opacity: 0.4,
-      duration: 0.8,
+     duration: 0.75,
       ease: customEases.pageTransition,
     },
     0,
@@ -41,24 +41,24 @@ export async function defaultTransition(currentContainer, nextContainer) {
       nextContainer,
       {
         clipPath: "inset(0% 0% 0% 0%)",
-        duration: 0.8,
+     duration: 0.75,
         force3D: true,
         ease: customEases.pageTransition,
       },
       0,
     );
 
-  if (enterData?.tweens) {
-    enterData.tweens.forEach((tween) => {
-      tl.to(tween.target, tween.vars, tween.position);
-    });
-  }
+  // if (enterData?.tweens) {
+  //   enterData.tweens.forEach((tween) => {
+  //     tl.to(tween.target, tween.vars, tween.position);
+  //   });
+  // }
 
-  if (enterData?.splitInstance) {
-    tl.eventCallback("onComplete", () => {
-      nextContainer._splitInstance = enterData.splitInstance;
-    });
-  }
+  // if (enterData?.splitInstance) {
+  //   tl.eventCallback("onComplete", () => {
+  //     nextContainer._splitInstance = enterData.splitInstance;
+  //   });
+  // }
 
   return tl;
 }

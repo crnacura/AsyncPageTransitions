@@ -1,12 +1,18 @@
 import { gsap } from "../../lib/index";
 import template from "./about.html?raw";
-
+import ENTER from "../../animations/Enter";
 export default function AboutPage() {
   return template;
 }
 
 export function init(options = {}) {
-  return [];
+  const container = options.container || document.querySelector('[data-transition="container"]');
+  
+  const enterData = ENTER(container, 0.35);
+
+  if (enterData?.splitInstance) {
+    container._splitInstance = enterData.splitInstance;
+  }
 }
 
 export function cleanup() {

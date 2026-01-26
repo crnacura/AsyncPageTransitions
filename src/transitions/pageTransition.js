@@ -5,6 +5,7 @@ let activeTimeline = null;
 
 export function killActiveTimeline() {
   if (activeTimeline) {
+
     activeTimeline.kill();
     activeTimeline = null;
   }

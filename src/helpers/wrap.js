@@ -16,7 +16,7 @@ export function wrap_lines(el) {
 
   gsap.set(el.lines, {
     y: "100%",
-    z: 0,
+
     force3D: true,
     willChange: "transform",
   });
