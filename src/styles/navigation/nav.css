@@ -1,0 +1,9 @@
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  z-index: 50;
+}

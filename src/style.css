@@ -1,0 +1,28 @@
+@import "./styles/index.css";
+:root {
+  --text_color: rgb(0, 0, 0);
+  --spacing: "20px";
+}
+@font-face {
+  font-family: "Lay";
+  src: url("/fonts/laygrotesk-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Lay;
+  background-color: #000000;
+  color: var(--text_color);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+main {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100vh;
+}
