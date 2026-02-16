@@ -39,9 +39,7 @@
   font-size: 12px;
   text-transform: uppercase;
 }
-.anim_p {
-  opacity: 0;
-}
+
 .lines {
   position: absolute;
   bottom: 0;
@@ -114,7 +112,7 @@ h1 {
   width: 100%;
   position: fixed;
   height: 100vh;
-  opacity: 15%;
+  opacity: 10%;
   filter: grayscale(100%);
   mix-blend-mode: difference;
 }
