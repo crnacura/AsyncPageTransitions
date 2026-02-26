@@ -47,7 +47,7 @@ class Link extends HTMLElement {
     const current = normalize(currentPath);
     const target = normalize(href);
 
-    if (current.startsWith("mail:to") || current.startWidth("https://")) {
+    if (current.startsWith("mail:to") || current.startsWith("https://")) {
       return false;
     }
 
